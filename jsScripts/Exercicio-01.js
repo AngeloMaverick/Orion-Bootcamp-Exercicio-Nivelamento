@@ -17,7 +17,7 @@ const quantidadeVogais = (palavra) => {
     "ô",
     "ú",
   ];
-  const palavraArray = palavra.split("");
+  const palavraArray = palavra.toLowerCase().split("");
   return palavraArray.filter((letra) => vogais.includes(letra)).length;
 };
 console.log(quantidadeVogais("pato"));
