@@ -18,7 +18,7 @@ const quantidadeVogais = (palavra: string): number => {
     "ô",
     "ú",
   ];
-  const palavraArray: string[] = palavra.split("");
+  const palavraArray: string[] = palavra.toLowerCase().split("");
   return palavraArray.filter((letra) => vogais.includes(letra)).length;
 };
 
